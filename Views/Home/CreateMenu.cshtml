@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DynamicPage.Models.Page>
+
+@if (Model.Any())
+{
+    foreach (var item in Model)
+     {
+         <li>
+             <a href="@Url.Action("DisplayPage", "Page", new {url = item.Url})">@item.Title</a>
+         </li>
+     }
+}

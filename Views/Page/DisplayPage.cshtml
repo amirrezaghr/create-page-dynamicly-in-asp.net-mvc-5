@@ -1,0 +1,12 @@
+﻿@model DynamicPage.Models.Page
+@{
+    ViewBag.Title = ((Model.BrowserTitle != null) ? Model.BrowserTitle : "");
+}
+
+<h2>@Model.Title</h2>
+
+<p>@Model.ShortDescription</p>
+<div>
+    <p>@Model.Text</p>
+</div>
+
